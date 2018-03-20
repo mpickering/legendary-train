@@ -1,0 +1,2 @@
+packages: plugin/plugin.cabal
+          benchmarks.cabal

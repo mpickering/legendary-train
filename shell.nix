@@ -4,7 +4,7 @@ let
 
   inherit (nixpkgs) pkgs;
 
-  f = { mkDerivation, base, criterion, deepseq, mtl, plugin, random
+  f = { mkDerivation, base, deepseq, mtl, plugin, random
       , stdenv
       }:
       mkDerivation {
@@ -14,7 +14,7 @@ let
         isLibrary = false;
         isExecutable = true;
         executableHaskellDepends = [
-          base criterion deepseq mtl plugin random
+          base deepseq mtl plugin random
         ];
         license = stdenv.lib.licenses.bsd3;
       };
