@@ -28,13 +28,10 @@ executable benchmarks
   other-modules: Logic
                  GenericLensExamples
                  HandExamples
-                 Lens
                  Types
 
   -- other-extensions:
   ghc-options: -O2 -fexpose-all-unfoldings -fforce-recomp
-  if flag(high-inlining)
-    ghc-options: -funfolding-use-threshold=1100
   if flag(late-spec)
     ghc-options: -fplugin=Plugin
   build-depends:       base >=4.10 && <4.11
