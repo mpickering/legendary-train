@@ -15,10 +15,6 @@ build-type:          Simple
 extra-source-files:  README, ChangeLog.md
 cabal-version:       >=1.10
 
-Flag high-inlining
-  Description: Enabled a high inlining use threshold
-  Default: False
-
 Flag late-spec
   Description: Enables a late-specialisation pass
   Default: False
@@ -37,7 +33,6 @@ executable benchmarks
   build-depends:       base >=4.10 && <4.11
                      , random >=1.0
                      , deepseq
-                     , criterion
                      , plugin
                      , mtl
 
