@@ -30,7 +30,7 @@ executable benchmarks
   ghc-options: -O2 -fexpose-all-unfoldings -fforce-recomp
   if flag(late-spec)
     ghc-options: -fplugin=Plugin
-  build-depends:       base >=4.10 && <4.11
+  build-depends:       base >=4.10 && <4.15
                      , random >=1.0
                      , deepseq
                      , plugin
